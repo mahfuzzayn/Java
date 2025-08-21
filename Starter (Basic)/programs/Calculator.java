@@ -1,3 +1,17 @@
+/*
+
+Programmed by: Mahfuz Zayn
+Date created: 21 August, 2025
+Last updated: 21 August, 2025
+
+Description
+A simple calculator that takes an input of how many operands users want to work with. Then user
+inputs those numbers and again another input will be taken as operator for doing operations.
+
+Limitations: This calculator can only work with single operator (input).
+ 
+*/
+
 package programs;
 import java.util.Scanner;
 
