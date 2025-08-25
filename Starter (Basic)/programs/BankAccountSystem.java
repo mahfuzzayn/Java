@@ -25,6 +25,12 @@ public class BankAccountSystem {
 		
 		System.out.println("1. Create Account\n2. Deposit\n3. Withdraw\n4. Check Balance\n5. Exit");
 		
+		int option = scanf.nextInt();
+		
+		if (option != 1) {
+			System.out.println("You have to create an account first");
+		}
+		
 		name = scanf.nextLine();
 		accountNumber = 101;
 		balance = scanf.nextDouble();
@@ -32,10 +38,10 @@ public class BankAccountSystem {
 		while (true) {
 			System.out.println("1. Create Account\n2. Deposit\n3. Withdraw\n4. Check Balance\n5. Exit");
 			
-			int option = scanf.nextInt();
+			option = scanf.nextInt();
 			
 			switch (option) {
-				case 2: 
+				case 2: 	
 					double deposit_amount = scanf.nextDouble();
 					
 					deposit(balance, deposit_amount);
@@ -49,10 +55,13 @@ public class BankAccountSystem {
 					break;
 				case 4:
 					checkBalance(balance);
-					
 					break;
-				case 5:
+				case 5: 
 					break;
+			}
+			
+			if (option == 5) {
+				break;
 			}
 		}
 		
