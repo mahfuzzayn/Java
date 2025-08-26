@@ -27,16 +27,25 @@ public class BankAccountSystem {
 		
 		int option = scanf.nextInt();
 		
-		if (option != 1) {
-			System.out.println("You have to create an account first");
+		while (option != 1) {
+			System.out.println("! --- You have to create an account first --- !\n");
+			option = scanf.nextInt();
 		}
 		
-		name = scanf.nextLine();
+		System.out.println("Enter your name: ");
+		name = "Mahfuz Zayn";
+		
 		accountNumber = 101;
-		balance = scanf.nextDouble();
+		
+		System.out.println("Initial balance: ");
+		balance = 500;
+		
+		System.out.println("\n");
+		System.out.printf("Welcome, %s\n", name);
+		System.out.printf("Account balance: %f\n\n", balance);
 		
 		while (true) {
-			System.out.println("1. Create Account\n2. Deposit\n3. Withdraw\n4. Check Balance\n5. Exit");
+			System.out.println("1. Deposit\n2. Withdraw\n3. Check Balance\n4. Exit");
 			
 			option = scanf.nextInt();
 			
