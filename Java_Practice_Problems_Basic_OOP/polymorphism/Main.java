@@ -40,6 +40,17 @@ class ArtsStudent extends Student {
 	}
 }
 
+// Problem 3
+class Calculator {
+	int add(int a, int b) {
+		return a + b;
+	}
+	
+	int add(int a, int b, int c) {
+		return a + b + c;
+	}
+}
+
 public class Main {
 	public static void main(String[] args) {
 		// Problem 1
@@ -60,5 +71,14 @@ public class Main {
 		
 		s = new ArtsStudent();
 		s.showGrade();
+
+        // Problem 3
+		Calculator c;
+		
+		c = new Calculator();
+		System.out.println(c.add(10, 20));
+		
+		c = new Calculator();
+		System.out.println(c.add(10, 20, 30));
 	}
 }
