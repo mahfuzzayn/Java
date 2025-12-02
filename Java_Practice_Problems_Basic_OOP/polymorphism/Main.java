@@ -21,6 +21,25 @@ class Cat extends Animal {
 	}
 }
 
+// Problem 2
+class Student {
+	void showGrade() {
+		System.out.println("No grade");
+	}
+}
+
+class ScienceStudent extends Student {
+	void showGrade() {
+		System.out.println("A");
+	}
+}
+
+class ArtsStudent extends Student {
+	void showGrade() {
+		System.out.println("B");
+	}
+}
+
 public class Main {
 	public static void main(String[] args) {
 		// Problem 1
@@ -31,5 +50,15 @@ public class Main {
 		
 		a = new Cat();
 		a.sound();
+		
+		
+		// Problem 2
+		Student s;
+		
+		s = new ScienceStudent();
+		s.showGrade();
+		
+		s = new ArtsStudent();
+		s.showGrade();
 	}
 }
