@@ -108,5 +108,16 @@ public class Main {
 		
 		s4 = new ScienceStudent();
 		s4.displayInfo("Emran Hosen", 48002);
+
+        // Problem 5
+		Employee e = new Employee();
+		
+		System.out.println(e.calculateSalary());
+		
+		e = new FullTimeEmployee();
+		System.out.println(e.calculateSalary());
+		
+		e = new PartTimeEmployee();
+		System.out.println(e.calculateSalary());
 	}
 }
