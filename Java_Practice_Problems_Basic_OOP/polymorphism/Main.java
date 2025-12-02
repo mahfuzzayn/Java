@@ -51,6 +51,24 @@ class Calculator {
 	}
 }
 
+// Problem 4
+class Student {
+	void displayInfo(String name) {
+		System.out.println(name);
+	}
+	
+	void displayInfo(String name, int id) {
+		System.out.println(name + " " + id);
+	}
+}
+
+class ScienceStudent extends Student {
+	@Override
+	void displayInfo(String name, int id) {
+		System.out.println(name + " " + id + "\nDepartment: Science");
+	}
+}
+
 public class Main {
 	public static void main(String[] args) {
 		// Problem 1
@@ -80,5 +98,15 @@ public class Main {
 		
 		c = new Calculator();
 		System.out.println(c.add(10, 20, 30));
+
+        // Problem 4
+		Student s4;
+		
+		s4 = new Student();
+		s4.displayInfo("Fazle Rabbi");
+		s4.displayInfo("Mahfuz Zayn", 48005);
+		
+		s4 = new ScienceStudent();
+		s4.displayInfo("Emran Hosen", 48002);
 	}
 }
