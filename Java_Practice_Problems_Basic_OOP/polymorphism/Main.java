@@ -22,19 +22,19 @@ class Cat extends Animal {
 }
 
 // Problem 2
-class Student {
+class Student2 {
 	void showGrade() {
 		System.out.println("No grade");
 	}
 }
 
-class ScienceStudent extends Student {
+class ScienceStudent2 extends Student2 {
 	void showGrade() {
 		System.out.println("A");
 	}
 }
 
-class ArtsStudent extends Student {
+class ArtsStudent2 extends Student2 {
 	void showGrade() {
 		System.out.println("B");
 	}
@@ -69,6 +69,27 @@ class ScienceStudent extends Student {
 	}
 }
 
+// Problem 5
+class Employee {
+	int calculateSalary() {
+		return 0;
+	}
+}
+
+class FullTimeEmployee extends Employee {
+	@Override
+	int calculateSalary() {
+		return 5000;
+	}
+}
+
+class PartTimeEmployee extends Employee {
+	@Override
+	int calculateSalary() {
+		return 2000;
+	}
+}
+
 public class Main {
 	public static void main(String[] args) {
 		// Problem 1
@@ -82,24 +103,24 @@ public class Main {
 		
 		
 		// Problem 2
-		Student s;
+		Student2 s;
 		
-		s = new ScienceStudent();
+		s = new ScienceStudent2();
 		s.showGrade();
 		
-		s = new ArtsStudent();
+		s = new ArtsStudent2();
 		s.showGrade();
-
-        // Problem 3
+		
+		
+		// Problem 3
 		Calculator c;
 		
 		c = new Calculator();
 		System.out.println(c.add(10, 20));
-		
-		c = new Calculator();
 		System.out.println(c.add(10, 20, 30));
-
-        // Problem 4
+		
+		
+		// Problem 4
 		Student s4;
 		
 		s4 = new Student();
@@ -108,8 +129,9 @@ public class Main {
 		
 		s4 = new ScienceStudent();
 		s4.displayInfo("Emran Hosen", 48002);
-
-        // Problem 5
+		
+		
+		// Problem 5
 		Employee e = new Employee();
 		
 		System.out.println(e.calculateSalary());
